@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .sidebar-icon{
+    @apply relative flex items-center justify-center
+            h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
+            bg-gray-800 text-green-500
+            hover:bg-green-900 hover:text-white
+            rounded-3xl hover:rounded-xl
+            transition-all duration-300 ease-linear;
+  }
+  .sidebar-tooltip{
+    @apply absolute w-auto p-2 m-2 min-w-max left-14
+           rounded-md shadow-md
+           text-white bg-gray-900
+           text-xs font-bold
+           transition-all duration-100 scale-0 origin-left;
+  }
+  .server-name{
+    @apply  grid rounded-md shadow-md
+             mt-3 h-10
+
+            bg-gray-900 hover:bg-gray-800;
+  }
+  .dropdown {
+    @apply m-0 w-full px-2 pb-2
+    transition duration-300 ease-in-out;
+  }
+  .dropdown-header{
+    @apply flex justify-end
+  }
+  .dropdown-selection {
+    @apply  flex flex-row items-center justify-evenly
+            mt-1 mr-auto 
+            h-8 rounded-md shadow-md
+            hover:bg-blue-700
+            transition duration-300 ease-in-out
+            cursor-pointer;
+  }
+  .dropdown-selection-text {
+    @apply text-white font-semibold tracking-wide
+    mr-auto ml-4 
+    transition duration-300 ease-in-out 
+    cursor-pointer;
+  }
+}
